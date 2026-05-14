@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Project-local scratch
+*.log
+.last-check.json

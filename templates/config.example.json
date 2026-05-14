@@ -1,0 +1,7 @@
+{
+  "rotate_threshold_pct": 90,
+  "safety_margin_pct": 30,
+  "reset_grace_min": 15,
+  "dry_run": false,
+  "adaptive_polling": true
+}
