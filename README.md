@@ -7,15 +7,11 @@
 
 ## 安装
 
-私有 repo 内部分发，走 git clone：
-
 ```bash
 git clone git@github.com:Ailoha-ai/cswap-rotator.git
 cd cswap-rotator
 bash install.sh
 ```
-
-> 没有 ssh key 的可以用 `gh repo clone Ailoha-ai/cswap-rotator`（需 `gh auth login`）。
 
 如果系统里没有 `uv` 和 `cswap`，install.sh 会自动安装。
 
@@ -69,7 +65,6 @@ bash install.sh --threshold 95 --margin 25 --grace 10
 | `rotate_threshold_pct` | 90 | active 5h% 超过这个值触发评估 |
 | `safety_margin_pct` | 30 | 候选必须比 active 低这么多个百分点才算"舒适切换" |
 | `reset_grace_min` | 15 | active 还有这么多分钟内自然重置 → 不切 |
-| `dry_run` | false | true = 只记录决策不真切 |
 | `adaptive_polling` | true | false = 忽略 hint 文件，固定每 10 分钟查一次 |
 
 改完下次 10 分钟唤醒时自动生效，不用 reload。
@@ -110,7 +105,7 @@ bash install.sh --purge       # 连 config 和 log 也清掉
 ## 文件落地位置
 
 ```
-~/.cswap-rotator/                       # 脚本（隐藏目录，类似 ~/.pyenv ~/.nvm）
+~/.cswap-rotator/                      
 ├── scripts/rotator.py
 └── templates/
 
