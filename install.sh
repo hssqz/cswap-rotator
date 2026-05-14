@@ -8,10 +8,13 @@
 # cswap-rotator one-line installer (macOS).
 # Auto-installs uv and cswap if missing.
 #
+# Distribution (private repo, internal use):
+#   git clone git@github.com:Ailoha-ai/cswap-rotator.git
+#   cd cswap-rotator && bash install.sh
+#
 # Usage:
-#   curl -fsSL <URL>/install.sh | bash
-#   curl -fsSL <URL>/install.sh | bash -s -- --threshold 95
-#   bash install.sh                                # local
+#   bash install.sh                                # default install
+#   bash install.sh --threshold 95 --margin 25     # with overrides
 #   bash install.sh --uninstall                    # remove (preserve config + log)
 #   bash install.sh --purge                        # remove everything
 #

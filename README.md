@@ -7,11 +7,17 @@
 
 ## 安装
 
-一行命令搞定。如果系统里没有 `uv` 和 `cswap`，会自动安装。
+私有 repo 内部分发，走 git clone：
 
 ```bash
+git clone git@github.com:Ailoha-ai/cswap-rotator.git
+cd cswap-rotator
 bash install.sh
 ```
+
+> 没有 ssh key 的可以用 `gh repo clone Ailoha-ai/cswap-rotator`（需 `gh auth login`）。
+
+如果系统里没有 `uv` 和 `cswap`，install.sh 会自动安装。
 
 带参数：
 
