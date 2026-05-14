@@ -419,7 +419,10 @@ def main():
 
         seq_path = get_backup_root() / "sequence.json"
         if not seq_path.exists():
-            die("sequence.json missing — is cswap initialized?", path=str(seq_path))
+            # Fresh cswap install with no accounts yet — not an error, just nothing to do.
+            emit({"decision": "skip",
+                  "reason": "cswap has no accounts yet (run `cswap --add-account`)"})
+            return
 
         sequence = json.loads(seq_path.read_text())
         active_num = (
