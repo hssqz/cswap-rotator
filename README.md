@@ -8,7 +8,7 @@
 ## 安装
 
 ```bash
-git clone git@github.com:Ailoha-ai/cswap-rotator.git
+git clone git@github.com:hssqz/cswap-rotator.git
 cd cswap-rotator
 bash install.sh
 ```
